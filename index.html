@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>亞洲各國來台旅客趨勢分析 (2015-2024)</title>
+    <style>
+        /* 全局樣式 */
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* 容器設計 */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        /* 標題區塊 */
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 30px 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin-top: 10px;
+            opacity: 0.8;
+            font-size: 0.9em;
+        }
+
+        /* 圖表區塊 */
+        .chart-section {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        #chartdiv {
+            width: 100%;
+            height: 500px;
+        }
+
+        /* 報導文稿區塊 */
+        .article-section {
+            padding: 40px;
+            background-color: #fafafa;
+        }
+
+        .article-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .article-title {
+            font-size: 1.8em;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            border-left: 5px solid var(--accent-color);
+            padding-left: 15px;
+        }
+
+        .article-meta {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 30px;
+        }
+
+        .article-body p {
+            margin-bottom: 1.5em;
+            text-align: justify;
+        }
+
+        .article-body strong {
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
+        .highlight-box {
+            background: #e8f4fd;
+            border-left: 4px solid var(--accent-color);
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        /* 頁尾 */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #888;
+            font-size: 0.8em;
+            background: #eee;
+        }
+
+        @media (max-width: 768px) {
+            .article-section {
+                padding: 20px;
+            }
+            header h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>亞洲主要國家來台旅客趨勢儀表板</h1>
+            <p>Data Source: Tourism Statistics (2015-2024)</p>
+        </header>
+
+        <div class="chart-section">
+            <div id="chartdiv"></div>
+        </div>
+
+        <article class="article-section">
+            <div class="article-content">
+                <h2 class="article-title">亞洲旅客版圖大洗牌：十年數據看見觀光新趨勢</h2>
+                <div class="article-meta">
+                    <span>發布日期：2025年12月10日</span> | <span>分析師：AI Data Insight</span>
+                </div>
+                
+                <div class="article-body">
+                    <p>
+                        回顧過去十年（2015-2024），亞洲地區來台旅遊的市場結構經歷了劇烈的變動與重組。從數據視覺化圖表中，我們可以清晰地看見三個關鍵的發展階段：陸客縮減期、疫情停滯期，以及後疫情時代的多元復甦期。
+                    </p>
+
+                    <div class="highlight-box">
+                        <strong>關鍵數據摘要：</strong>
+                        <ul>
+                            <li>2015年中國大陸旅客達418萬人次高峰，隨後逐年下滑。</li>
+                            <li>疫情期間（2020-2022）全體市場幾乎歸零。</li>
+                            <li>2024年日本與韓國成為復甦領頭羊，合計佔據主要份額。</li>
+                        </ul>
+                    </div>
+
+                    <h3>1. 王座易主：從「陸客獨大」到「日韓雙強」</h3>
+                    <p>
+                        在2015年，<strong>中國大陸</strong>以超過400萬人次的驚人數字，佔據了絕對的市場主導地位，是當時第二名日本（約162萬）的兩倍以上。然而，隨著2016年後的政治氛圍變遷與政策調整，陸客來台人數呈現明顯的緩步下滑趨勢。到了2024年，市場版圖已完全翻轉，<strong>日本</strong>（約131萬）與<strong>韓國</strong>（約100萬）展現了強勁的復甦力道，兩國合計已成為目前最主要的客源支柱。
+                    </p>
+
+                    <h3>2. 新南向政策的發酵</h3>
+                    <p>
+                        觀察<strong>越南、泰國、菲律賓</strong>等東南亞國家的數據，在2015至2019年間呈現穩定的成長曲線。這顯示出「新南向政策」在分散觀光風險上起到了一定作用。即使在2023-2024年的疫後復甦階段，這些國家的旅客回流速度也相當穩健，成為填補陸客缺口的重要基石。
+                    </p>
+
+                    <h3>3. 疫後復甦的挑戰與機會</h3>
+                    <p>
+                        雖然2024年的數據顯示各國旅客數正大幅回升，但若與2019年的全盛時期相比，整體總量仍有成長空間。值得注意的是，<strong>韓國市場</strong>的表現相當亮眼，2024年的人數已逼近其歷史高點，顯示韓國年輕族群對台灣旅遊的高喜好度。未來觀光策略應持續深耕日韓市場，並保持東南亞市場的熱度，以建立更健康、多元的旅客結構。
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <footer>
+            &copy; 2025 Tourism Data Analysis Report. Powered by amCharts 5.
+        </footer>
+    </div>
+
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+    <script>
+        am5.ready(function() {
+
+            // Data
+            var allData = {
+              "2015": {
+                "日本": 1627229,
+                "韓國": 658757,
+                "中國大陸": 4184102,
+                "越南": 146380,
+                "泰國": 124409,
+                "馬來西亞": 431481,
+                "新加坡": 393037,
+                "菲律賓": 139217,
+                "印尼": 177743,
+                "印度": 32198
+              },
+              "2016": {
+                "日本": 1895702,
+                "韓國": 884397,
+                "中國大陸": 3511734,
+                "越南": 196636,
+                "泰國": 195640,
+                "馬來西亞": 474420,
+                "新加坡": 407267,
+                "菲律賓": 172475,
+                "印尼": 188720,
+                "印度": 33550
+              },
+              "2017": {
+                "日本": 1898854,
+                "韓國": 1054708,
+                "中國大陸": 2732549,
+                "越南": 383329,
+                "泰國": 292534,
+                "馬來西亞": 528019,
+                "新加坡": 425577,
+                "菲律賓": 290784,
+                "印尼": 189631,
+                "印度": 34962
+              },
+              "2018": {
+                "日本": 1969151,
+                "韓國": 1019441,
+                "中國大陸": 2695615,
+                "越南": 490774,
+                "泰國": 320008,
+                "馬來西亞": 526129,
+                "新加坡": 427222,
+                "菲律賓": 419105,
+                "印尼": 210985,
+                "印度": 38385
+              },
+              "2019": {
+                "日本": 2167952,
+                "韓國": 1242598,
+                "中國大陸": 2714065,
+                "越南": 405396,
+                "泰國": 413926,
+                "馬來西亞": 537692,
+                "新加坡": 460635,
+                "菲律賓": 509519,
+                "印尼": 229960,
+                "印度": 40353
+              },
+              "2020": {
+                "日本": 269659,
+                "韓國": 178911,
+                "中國大陸": 111050,
+                "越南": 110882,
+                "泰國": 63553,
+                "馬來西亞": 72705,
+                "新加坡": 49946,
+                "菲律賓": 77065,
+                "印尼": 55717,
+                "印度": 6606
+              },
+              "2021": {
+                "日本": 10056,
+                "韓國": 3300,
+                "中國大陸": 13267,
+                "越南": 24935,
+                "泰國": 7570,
+                "馬來西亞": 6205,
+                "新加坡": 2417,
+                "菲律賓": 9183,
+                "印尼": 13819,
+                "印度": 1930
+              },
+              "2022": {
+                "日本": 87616,
+                "韓國": 51748,
+                "中國大陸": 24378,
+                "越南": 134818,
+                "泰國": 74434,
+                "馬來西亞": 59035,
+                "新加坡": 69507,
+                "菲律賓": 64038,
+                "印尼": 78162,
+                "印度": 9390
+              },
+              "2023": {
+                "日本": 928235,
+                "韓國": 744727,
+                "中國大陸": 226269,
+                "越南": 382529,
+                "泰國": 394688,
+                "馬來西亞": 437491,
+                "新加坡": 463893,
+                "菲律賓": 350487,
+                "印尼": 201980,
+                "印度": 31584
+              },
+              "2024": {
+                "日本": 1319592,
+                "韓國": 1003086,
+                "中國大陸": 438212,
+                "越南": 370548,
+                "泰國": 400038,
+                "馬來西亞": 429727,
+                "新加坡": 447841,
+                "菲律賓": 467157,
+                "印尼": 224477,
+                "印度": 38158
+              }
+            };
+
+            // Create root element
+            var root = am5.Root.new("chartdiv");
+
+            root.numberFormatter.setAll({
+                numberFormat: "#a",
+                bigNumberPrefixes: [
+                    { number: 1e6, suffix: "M" },
+                    { number: 1e9, suffix: "B" }
+                ],
+                smallNumberPrefixes: []
+            });
+
+            var stepDuration = 2000;
+
+            // Set themes
+            root.setThemes([am5themes_Animated.new(root)]);
+
+            // Create chart
+            var chart = root.container.children.push(am5xy.XYChart.new(root, {
+                panX: true,
+                panY: true,
+                wheelX: "none",
+                wheelY: "none",
+                paddingLeft: 0
+            }));
+
+            chart.zoomOutButton.set("forceHidden", true);
+
+            // Create axes
+            var yRenderer = am5xy.AxisRendererY.new(root, {
+                minGridDistance: 20,
+                inversed: true,
+                minorGridEnabled: true
+            });
+            yRenderer.grid.template.set("visible", false);
+
+            var yAxis = chart.yAxes.push(am5xy.CategoryAxis.new(root, {
+                maxDeviation: 0,
+                categoryField: "network",
+                renderer: yRenderer
+            }));
+
+            var xAxis = chart.xAxes.push(am5xy.ValueAxis.new(root, {
+                maxDeviation: 0,
+                min: 0,
+                strictMinMax: true,
+                extraMax: 0.1,
+                renderer: am5xy.AxisRendererX.new(root, {})
+            }));
+
+            xAxis.set("interpolationDuration", stepDuration / 10);
+            xAxis.set("interpolationEasing", am5.ease.linear);
+
+            // Add series
+            var series = chart.series.push(am5xy.ColumnSeries.new(root, {
+                xAxis: xAxis,
+                yAxis: yAxis,
+                valueXField: "value",
+                categoryYField: "network"
+            }));
+
+            series.columns.template.setAll({ cornerRadiusBR: 5, cornerRadiusTR: 5 });
+
+            series.columns.template.adapters.add("fill", function (fill, target) {
+                return chart.get("colors").getIndex(series.columns.indexOf(target));
+            });
+
+            series.columns.template.adapters.add("stroke", function (stroke, target) {
+                return chart.get("colors").getIndex(series.columns.indexOf(target));
+            });
+
+            series.bullets.push(function () {
+                return am5.Bullet.new(root, {
+                    locationX: 1,
+                    sprite: am5.Label.new(root, {
+                        text: "{valueXWorking.formatNumber('#.# a')}",
+                        fill: root.interfaceColors.get("alternativeText"),
+                        centerX: am5.p100,
+                        centerY: am5.p50,
+                        populateText: true
+                    })
+                });
+            });
+
+            var label = chart.plotContainer.children.push(am5.Label.new(root, {
+                text: "2015",
+                fontSize: "8em",
+                opacity: 0.2,
+                x: am5.p100,
+                y: am5.p100,
+                centerY: am5.p100,
+                centerX: am5.p100
+            }));
+
+            function getSeriesItem(category) {
+                for (var i = 0; i < series.dataItems.length; i++) {
+                    var dataItem = series.dataItems[i];
+                    if (dataItem.get("categoryY") == category) {
+                        return dataItem;
+                    }
+                }
+            }
+
+            function sortCategoryAxis() {
+                series.dataItems.sort(function (x, y) {
+                    return y.get("valueX") - x.get("valueX");
+                });
+
+                am5.array.each(yAxis.dataItems, function (dataItem) {
+                    var seriesDataItem = getSeriesItem(dataItem.get("category"));
+
+                    if (seriesDataItem) {
+                        var index = series.dataItems.indexOf(seriesDataItem);
+                        var deltaPosition = (index - dataItem.get("index", 0)) / series.dataItems.length;
+                        if (dataItem.get("index") != index) {
+                            dataItem.set("index", index);
+                            dataItem.set("deltaPosition", -deltaPosition);
+                            dataItem.animate({
+                                key: "deltaPosition",
+                                to: 0,
+                                duration: stepDuration / 2,
+                                easing: am5.ease.out(am5.ease.cubic)
+                            });
+                        }
+                    }
+                });
+
+                yAxis.dataItems.sort(function (x, y) {
+                    return x.get("index") - y.get("index");
+                });
+            }
+
+            var year = 2015;
+
+            var interval = setInterval(function () {
+                year++;
+                if (year > 2024) {
+                    clearInterval(interval);
+                    clearInterval(sortInterval);
+                }
+                updateData();
+            }, stepDuration);
+
+            var sortInterval = setInterval(function () {
+                sortCategoryAxis();
+            }, 100);
+
+            function setInitialData() {
+                var d = allData[year];
+                for (var n in d) {
+                    series.data.push({ network: n, value: d[n] });
+                    yAxis.data.push({ network: n });
+                }
+            }
+
+            function updateData() {
+                var itemsWithNonZero = 0;
+                if (allData[year]) {
+                    label.set("text", year.toString());
+                    am5.array.each(series.dataItems, function (dataItem) {
+                        var category = dataItem.get("categoryY");
+                        var value = allData[year][category];
+                        if (value > 0) {
+                            itemsWithNonZero++;
+                        }
+                        dataItem.animate({
+                            key: "valueX",
+                            to: value,
+                            duration: stepDuration,
+                            easing: am5.ease.linear
+                        });
+                        dataItem.animate({
+                            key: "valueXWorking",
+                            to: value,
+                            duration: stepDuration,
+                            easing: am5.ease.linear
+                        });
+                    });
+                    yAxis.zoom(0, itemsWithNonZero / yAxis.dataItems.length);
+                }
+            }
+
+            setInitialData();
+            setTimeout(function () {
+                year++;
+                updateData();
+            }, 50);
+
+            series.appear(1000);
+            chart.appear(1000, 100);
+
+        }); // end am5.ready()
+    </script>
+</body>
+</html>
